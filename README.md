@@ -1,4 +1,4 @@
-# AWS Invoice Automation 🧾
+# AWS Invoice Automation
 
 Automated AWS invoice reconciliation and reporting for multi-account, multi-payer environments. Reduces manual invoice processing from hours to seconds with full auditability.
 
