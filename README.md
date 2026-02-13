@@ -162,12 +162,8 @@ This tool supports the **Inform** phase of the FinOps lifecycle:
 
 Contributions welcome. Please open an issue first to discuss proposed changes.
 
-## License
-
-MIT License - see [LICENSE](LICENSE) for details.
-
 ## Author
 
-**Ali Allem** — Senior FinOps Manager | AWS Cost Optimisation | Cloud Governance
+**Ali Mohamed** — Senior FinOps Manager | Cloud Cost Optimisation | Cloud Governance
 
-[LinkedIn](https://www.linkedin.com/in/aliallem) • [GitHub](https://github.com/AliAllem)
+[LinkedIn](https://www.linkedin.com/in/ali-allemmohamed) • [GitHub](https://github.com/AliAllem)
