@@ -1,0 +1,19 @@
+# Monthly Budget Configuration
+# Define expected monthly spend per business unit for reconciliation.
+# Copy this file to budgets.yaml and update with your budget targets.
+
+budgets:
+  Engineering:
+    monthly_target: 150000
+    alert_threshold_pct: 10
+    currency: GBP
+
+  Data Science:
+    monthly_target: 50000
+    alert_threshold_pct: 15
+    currency: GBP
+
+  Innovation:
+    monthly_target: 10000
+    alert_threshold_pct: 20
+    currency: GBP

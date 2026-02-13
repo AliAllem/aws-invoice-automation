@@ -1,0 +1,32 @@
+# AWS Account Configuration
+# Map payer accounts to business units for cost allocation.
+# Copy this file to accounts.yaml and update with your account details.
+
+payer_accounts:
+  - id: "111111111111"
+    name: "Production"
+    business_unit: "Engineering"
+    cost_centre: "CC-1001"
+    owner: "platform-team@example.com"
+    environment: "production"
+
+  - id: "222222222222"
+    name: "Development"
+    business_unit: "Engineering"
+    cost_centre: "CC-1001"
+    owner: "platform-team@example.com"
+    environment: "development"
+
+  - id: "333333333333"
+    name: "Data Platform"
+    business_unit: "Data Science"
+    cost_centre: "CC-2001"
+    owner: "data-team@example.com"
+    environment: "production"
+
+  - id: "444444444444"
+    name: "Sandbox"
+    business_unit: "Innovation"
+    cost_centre: "CC-3001"
+    owner: "innovation@example.com"
+    environment: "sandbox"

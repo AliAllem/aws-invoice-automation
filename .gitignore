@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+reports/
+config/accounts.yaml
+config/budgets.yaml
+.vscode/
+.idea/

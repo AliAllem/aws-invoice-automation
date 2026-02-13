@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AWS Invoice Report — {{ month }}</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; color: #333; }
+        h1 { color: #232f3e; border-bottom: 3px solid #ff9900; padding-bottom: 10px; }
+        h2 { color: #232f3e; margin-top: 30px; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th { background: #232f3e; color: white; padding: 12px; text-align: left; }
+        td { border: 1px solid #ddd; padding: 10px; }
+        tr:nth-child(even) { background: #f9f9f9; }
+        .overrun { color: #d13212; font-weight: bold; }
+        .on-track { color: #1d8102; }
+        .underrun { color: #0073bb; }
+        .summary-box {
+            background: #f0f0f0; padding: 20px; border-radius: 8px;
+            margin: 20px 0; display: inline-block;
+        }
+        .metadata { color: #666; font-size: 0.9em; }
+        footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd;
+                 color: #999; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+    <h1>AWS Invoice Report — {{ month }}</h1>
+    <p class="metadata">Generated: {{ generated_at }} | Payer Accounts: {{ payer_count }}</p>
+
+    <div class="summary-box">
+        <strong>Total Spend: £{{ total_spend }}</strong>
+    </div>
+
+    <h2>Spend by Business Unit</h2>
+    <table>
+        <tr>
+            <th>Business Unit</th>
+            <th>Total Spend</th>
+            <th>Accounts</th>
+            <th>Top Service</th>
+        </tr>
+        <!-- Business unit rows inserted here -->
+    </table>
+
+    <h2>Budget Reconciliation</h2>
+    <table>
+        <tr>
+            <th>Business Unit</th>
+            <th>Actual</th>
+            <th>Budget</th>
+            <th>Variance</th>
+            <th>Status</th>
+        </tr>
+        <!-- Reconciliation rows inserted here -->
+    </table>
+
+    <footer>
+        <p>This report was automatically generated. Data sourced from AWS Cost Explorer.</p>
+        <p>Checksum: {{ checksum }}</p>
+    </footer>
+</body>
+</html>
